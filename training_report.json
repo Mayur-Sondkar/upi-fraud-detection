@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-04-06T13:54:39.269261",
+  "threshold": 0.35,
+  "best_model": "Random Forest",
+  "feature_cols": [
+    "transaction_hour",
+    "day_of_week",
+    "is_weekend",
+    "transaction_amount",
+    "sender_balance_before",
+    "receiver_balance_before",
+    "transaction_type",
+    "device_type",
+    "location_cluster",
+    "upi_app",
+    "is_new_device",
+    "is_night_transaction",
+    "transaction_velocity_last_1hr",
+    "transaction_velocity_last_24hr",
+    "account_age_days",
+    "failed_login_attempts",
+    "balance_utilisation",
+    "log_amount",
+    "velocity_ratio"
+  ],
+  "models": {
+    "Logistic Regression": {
+      "Accuracy": 0.9926,
+      "Precision": 0.7292,
+      "Recall": 0.9878,
+      "F1": 0.839,
+      "ROC_AUC": 0.9955,
+      "Avg_Precision": 0.9446,
+      "Fraud_Recall": 0.9878,
+      "Fraud_Prec": 0.7292,
+      "Fraud_F1": 0.839
+    },
+    "Random Forest": {
+      "Accuracy": 0.9988,
+      "Precision": 0.9483,
+      "Recall": 0.9913,
+      "F1": 0.9693,
+      "ROC_AUC": 0.9949,
+      "Avg_Precision": 0.9544,
+      "Fraud_Recall": 0.9913,
+      "Fraud_Prec": 0.9483,
+      "Fraud_F1": 0.9693
+    },
+    "Gradient Boosting": {
+      "Accuracy": 0.9983,
+      "Precision": 0.9291,
+      "Recall": 0.9898,
+      "F1": 0.9585,
+      "ROC_AUC": 0.9951,
+      "Avg_Precision": 0.9322,
+      "Fraud_Recall": 0.9898,
+      "Fraud_Prec": 0.9291,
+      "Fraud_F1": 0.9585
+    }
+  }
+}
